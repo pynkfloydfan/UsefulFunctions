@@ -1,7 +1,7 @@
 from PIL import Image
 import os
 
-class Images:
+class Image_functions:
     """
     Useful functions related to images
     """
@@ -9,6 +9,7 @@ class Images:
     # set the default location of images to the Pictures directory (WINDOWS)
     image_path = os.path.join(os.environ['USERPROFILE'], 'Pictures')
 
+    @staticmethod
     def cutimage(image, x_slices, y_slices, outpath=image_path):
     """
     Cuts an image into equal sized slices, x_slices long and y_slices high
