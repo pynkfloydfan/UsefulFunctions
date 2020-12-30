@@ -9,7 +9,7 @@ HERE = pathlib.Path(__file__).parent
 README = (HERE / 'README.md').read_text()
 
 setup(name='usefulfunctions',
-      version='1.0.1',
+      version='1.0.2',
       description='My collection of useful functions',
       long_description=README,
       author='Lloyd Greensite',
