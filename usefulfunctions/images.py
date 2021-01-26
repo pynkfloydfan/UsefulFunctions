@@ -73,10 +73,11 @@ def cutimage(image, columns, rows,
             x_list.append(image_slice)
             
             if save_images:
-                if file_names is None:
+                if file_names == None:
                     image_name = "slice_" + str(x) + "_" + str(y) + ".png"
                 else:
                     image_name = file_names[img] + '.png'
+                    img += 1
                     
             image_slice.save(os.path.join(save_path, image_name))
             # image_slice.show()
